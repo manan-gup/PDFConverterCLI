@@ -1,0 +1,30 @@
+{
+  "name": "webpagetopdf",
+  "version": "1.0.0",
+  "description": "A CLI tool that lets you convert any web page to a PDF file.",
+  "homepage": "https://github.com/manan-gup",
+  "bin": "./index.js",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "caxa --input . --output 'pdfconverter.exe' -- '{{caxa}}/node_modules/.bin/node' '{{caxa}}/index.js'"
+  },
+  "keywords": [
+    "CLI",
+    "PDF"
+  ],
+  "author": "Manan Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0",
+    "puppeteer": "^13.3.2"
+  }
+}
